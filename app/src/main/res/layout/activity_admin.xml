@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <include layout="@layout/custom_toolbar" />
+
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please Select UserID"
+
+        android:layout_margin="10dp"
+        android:textColor="#000000" />
+
+    <Spinner
+
+        android:id="@+id/spnr_email"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/sshape"
+        android:layout_marginBottom="10dp"/>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        >
+
+        <EditText
+            android:id="@+id/frm_date"
+            android:layout_width="200dp"
+            android:hint="From"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/headmybg"
+            android:textColor="#ffffff"
+            android:text="SELECT DATE"
+            android:layout_weight="0.46" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        >
+
+        <EditText
+            android:id="@+id/frm_time"
+            android:layout_width="200dp"
+            android:hint="From"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_time"
+            android:layout_width="wrap_content"
+            android:background="@drawable/headmybg"
+            android:textColor="#ffffff"
+            android:layout_height="wrap_content"
+            android:text="SELECT TIME"
+            android:layout_weight="0.48" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp">
+
+        <EditText
+            android:id="@+id/to_date"
+            android:layout_width="200dp"
+            android:hint="To"
+            android:layout_height="wrap_content"
+
+            />
+
+        <Button
+            android:id="@+id/btn_to_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SELECT DATE"
+            android:background="@drawable/headmybg"
+            android:textColor="#ffffff"
+            android:layout_weight="0.48"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp">
+
+        <EditText
+            android:id="@+id/to_time"
+            android:layout_width="200dp"
+            android:hint="To"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_to_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SELECT TIME"
+            android:background="@drawable/headmybg"
+            android:textColor="#ffffff"
+            android:layout_weight="0.48"/>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.93"
+        android:gravity="bottom">
+
+        <Button
+            android:id="@+id/btn_logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|bottom"
+            android:background="@drawable/toolbg"
+            android:gravity="center"
+            android:text="submit"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+</LinearLayout>
